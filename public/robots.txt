@@ -1,0 +1,19 @@
+# robots.txt for ExaNova - Smart College Examination & Assessment System
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /features
+Allow: /workflow
+Allow: /contact
+
+# Private Authenticated & Examination Routes
+Disallow: /admin/
+Disallow: /faculty/
+Disallow: /student/
+Disallow: /exam/
+Disallow: /login
+Disallow: /change-password
+Disallow: /forgot-password
+Disallow: /api/
+
+Sitemap: https://exanova.edu/sitemap.xml

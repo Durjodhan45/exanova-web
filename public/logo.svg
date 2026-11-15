@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101B3F" />
+      <stop offset="100%" stop-color="#1E3E62" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A896" />
+      <stop offset="100%" stop-color="#028090" />
+    </linearGradient>
+  </defs>
+  <!-- Background Shield / Hexagon -->
+  <polygon points="100,10 180,55 180,145 100,190 20,145 20,55" fill="url(#primaryGrad)" stroke="#6246EA" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Graduation Cap / Exam Crest -->
+  <polygon points="100,45 155,75 100,105 45,75" fill="url(#accentGrad)" />
+  <path d="M60,88 L60,125 Q100,148 140,125 L140,88 Q100,110 60,88 Z" fill="#FFFFFF" opacity="0.95" />
+  <!-- Pen Nib / Star Icon in center -->
+  <circle cx="100" cy="115" r="7" fill="#6246EA" />
+  <line x1="155" y1="75" x2="160" y2="120" stroke="#00A896" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="160" cy="123" r="4" fill="#00A896" />
+</svg>
