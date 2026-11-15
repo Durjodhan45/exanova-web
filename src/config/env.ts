@@ -1,5 +1,17 @@
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || '/api/v1';
+
+// Normalize URL: strip trailing slash and append /api/v1 if a root origin was provided
+const normalizeApiUrl = (url: string) => {
+  const trimmed = url.trim().replace(/\/+$/, '');
+  if (!trimmed) return '/api/v1';
+  if (trimmed.startsWith('http') && !trimmed.includes('/api')) {
+    return `${trimmed}/api/v1`;
+  }
+  return trimmed;
+};
+
 export const ENV = {
-  API_BASE_URL: import.meta.env.VITE_API_BASE_URL || '/api/v1',
+  API_BASE_URL: normalizeApiUrl(rawBaseUrl),
   IS_PRODUCTION: import.meta.env.PROD,
 };
 
